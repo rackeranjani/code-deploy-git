@@ -27,8 +27,8 @@ Please set SECRET_KEY, JWT_SECRET_KEY, PSQL_DB_NAMEPSQL_DB_USER, PSQL_DB_PASSWD,
 
 In ```scripts/start_application.sh```
 ```bash
-echo yes | DJANGO_SETTINGS_MODULE=project.settings.staging SECRET_KEY=your-secret-here JWT_SECRET_KEY=your-jwt-secret-here PSQL_DB_NAME=your-db-name-here PSQL_DB_USER=your-db-user-here PSQL_DB_PASSWD=your-db-password-here PSQL_HOST=your-aws-psql-rds-server-dns-here PSQL_PORT=5432 /home/ec2-user/www/project/manage.py collectstatic
-DJANGO_SETTINGS_MODULE=project.settings.staging SECRET_KEY=your-secret-here JWT_SECRET_KEY=your-jwt-secret-here PSQL_DB_NAME=your-db-name-here PSQL_DB_USER=your-db-user-here PSQL_DB_PASSWD=your-db-password-here PSQL_HOST=your-aws-psql-rds-server-dns-here PSQL_PORT=5432 supervisord -c /home/ec2-user/www/project/supervisor/default.conf
+echo yes | DJANGO_SETTINGS_MODULE=project.settings.staging SECRET_KEY=your-secret-here JWT_SECRET_KEY=your-jwt-secret-here PSQL_DB_NAME=your-db-name-here PSQL_DB_USER=your-db-user-here PSQL_DB_PASSWD=your-db-password-here PSQL_HOST=your-aws-psql-rds-server-dns-here PSQL_PORT=5432 /home/ubuntu/www/project/manage.py collectstatic
+DJANGO_SETTINGS_MODULE=project.settings.staging SECRET_KEY=your-secret-here JWT_SECRET_KEY=your-jwt-secret-here PSQL_DB_NAME=your-db-name-here PSQL_DB_USER=your-db-user-here PSQL_DB_PASSWD=your-db-password-here PSQL_HOST=your-aws-psql-rds-server-dns-here PSQL_PORT=5432 supervisord -c /home/ubuntu/www/project/supervisor/default.conf
 ```
 Please set SECRET_KEY, JWT_SECRET_KEY, PSQL_DB_NAMEPSQL_DB_USER, PSQL_DB_PASSWD, PSQL_HOST to your values.
 
